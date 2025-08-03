@@ -1,0 +1,44 @@
+.bottom-nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f8f9fa; /* Example: match your app's color */
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  height: 60px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--site-primary); /* Use app primary color */
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item:active, .nav-item:hover {
+  color: #1565c0; /* Slightly darker */
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  display: block;
+  /* fill: var(--site-primary);  */
+  /* Use app primary color for SVGs */
+  stroke: var(--site-primary); /* For stroke-based SVGs */
+}
+
+@media (min-width: 992px) {
+  .bottom-nav-bar {
+    display: none;
+  }
+} 

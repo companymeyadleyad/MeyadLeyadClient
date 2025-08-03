@@ -1,0 +1,68 @@
+{
+  "apartments": [
+    {
+      "id": 1,
+      "title": "דירת 3 חדרים במרכז תל אביב",
+      "price": "₪2,500,000",
+      "location": "תל אביב, ישראל",
+      "image": "https://example.com/image1.jpg",
+      "shortDescription": "דירה מרווחת עם מרפסת גדולה ונוף לים."
+    },
+    {
+      "id": 2,
+      "title": "דירת 4 חדרים עם נוף פתוח",
+      "price": "₪3,100,000",
+      "location": "חיפה, ישראל",
+      "image": "https://example.com/image4.jpg",
+      "shortDescription": "דירה יוקרתית עם מרפסת ונוף עוצר נשימה לים."
+    }
+  ],
+  "apartmentDetails": [
+    {
+      "id": 1,
+      "title": "דירת 3 חדרים במרכז תל אביב",
+      "price": "₪2,500,000",
+      "location": "תל אביב, ישראל",
+      "size": "85 מ\"ר",
+      "rooms": 3,
+      "floor": 5,
+      "totalFloors": 10,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה מדהימה במרכז תל אביב, עם סלון ענק, מטבח חדשני, ומרפסת מפנקת לנוף ים משגע.",
+      "images": [
+        "https://example.com/image1.jpg",
+        "https://example.com/image2.jpg",
+        "https://example.com/image3.jpg"
+      ],
+      "contact": {
+        "name": "דני כהן",
+        "phone": "052-1234567",
+        "email": "danny@example.com"
+      }
+    },
+    {
+      "id": 2,
+      "title": "דירת 4 חדרים עם נוף פתוח",
+      "price": "₪3,100,000",
+      "location": "חיפה, ישראל",
+      "size": "110 מ\"ר",
+      "rooms": 4,
+      "floor": 8,
+      "totalFloors": 12,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה מדהימה עם עיצוב מודרני, מטבח משודרג, ומרפסת עם נוף לים.",
+      "images": [
+        "https://example.com/image4.jpg",
+        "https://example.com/image5.jpg",
+        "https://example.com/image6.jpg"
+      ],
+      "contact": {
+        "name": "אורן לוי",
+        "phone": "054-7654321",
+        "email": "oren@example.com"
+      }
+    }
+  ]
+}

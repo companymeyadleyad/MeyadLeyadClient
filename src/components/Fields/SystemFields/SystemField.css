@@ -1,0 +1,56 @@
+/* SystemField.css */
+.system-field-group {
+  width: 100%;
+}
+
+.system-field {
+  width: 100%;
+}
+
+/* Desktop styles - make fields narrower */
+@media (min-width: 768px) {
+  .system-field-group {
+    max-width: 100%;
+  }
+
+  .system-field {
+    max-width: 100%;
+  }
+}
+
+/* אפקט מעבר עכבר ומגע */
+@media (hover: hover) {
+  .system-field input:hover,
+  .system-field textarea:hover,
+  .system-field select:hover {
+    border-color: var(--site-primary-light);
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
+    transform: translateY(-1px);
+  }
+}
+
+/* אפקט פוקוס - עובד גם במובייל */
+.system-field input:focus,
+.system-field textarea:focus,
+.system-field select:focus {
+  outline: none;
+  border-color: var(--site-primary);
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
+  transform: translateY(-2px);
+}
+
+/* אפקט ripple בלחיצה/נגיעה */
+.system-field input:active,
+.system-field textarea:active,
+.system-field select:active {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
+
+.system-field input,
+.system-field select {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}

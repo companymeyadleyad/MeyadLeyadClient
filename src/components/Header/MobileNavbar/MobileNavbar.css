@@ -1,0 +1,37 @@
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  position: relative;
+  width: 28px;
+  height: 22px;
+  display: inline-block;
+}
+
+.navbar-toggler-icon span,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  margin: 4px 0;
+}
+
+.navbar-toggler-icon span {
+  margin: 0;
+} 

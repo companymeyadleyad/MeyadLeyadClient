@@ -1,0 +1,131 @@
+/* CategorySelectionPage.css */
+.category-list {
+  width: 100%;
+}
+
+.category-item {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+}
+
+/* Card shadow */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Category form container - similar to steps-form-container */
+.category-form-container {
+  width: 100%;
+}
+
+/* Desktop styles - match StepsDemo width */
+@media (min-width: 768px) {
+  .category-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Make card width match StepsDemo */
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Category form container width in desktop */
+  .category-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Target form fields to make them narrower - similar to StepsDemo */
+  .width-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Target individual form fields */
+  .category-form-container .form-group,
+  .category-form-container .form-control,
+  .category-form-container .form-check {
+    max-width: 100%;
+  }
+}
+
+.categories-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.categories-title {
+  color: var(--site-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.category-card {
+  aspect-ratio: 1;
+  background: white;
+  border: 1px solid var(--site-primary-lighter);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--site-primary);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  color: var(--site-primary);
+  margin-bottom: 0.5rem;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .categories-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

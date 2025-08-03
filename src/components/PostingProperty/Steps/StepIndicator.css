@@ -1,0 +1,98 @@
+.step-indicator-container {
+  padding: 40px 0 20px 0;
+  direction: rtl;
+}
+
+.step-indicator {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+/* קו רקע אפור */
+.step-indicator::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 6px; /* עיבוי הקו */
+  background: #e9ecef; /* צבע רקע בהיר יותר */
+  border-radius: 3px; /* פינות מעוגלות */
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+}
+
+/* קו ההתקדמות */
+.step::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 0;
+  height: 6px; /* עיבוי הקו */
+  background: var(--site-primary);
+  border-radius: 3px; /* פינות מעוגלות */
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* אנימציה חלקה יותר */
+  box-shadow: 0 2px 4px rgba(108, 92, 231, 0.2); /* צל עדין */
+}
+
+/* נקודת ציון */
+.step::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background: #e9ecef;
+  border: 2px solid #e9ecef;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+/* נקודת ציון פעילה */
+.step.active::after {
+  background: var(--site-primary);
+  border-color: var(--site-primary);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+}
+
+.step.active::before {
+  width: 100%;
+}
+
+.step:not(.active)::before {
+  width: 0;
+}
+
+.step-title {
+  margin-top: 35px; /* הגדלת המרווח מהקו */
+  font-size: 14px;
+  color: #6c757d;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.step.current .step-title {
+  font-weight: bold;
+  color: var(--site-primary);
+  transform: scale(1.05); /* הגדלה קלה של הטקסט הנוכחי */
+  transition: transform 0.3s ease;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .step-indicator {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

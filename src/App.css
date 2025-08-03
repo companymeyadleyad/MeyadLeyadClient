@@ -1,0 +1,35 @@
+/* כל הגדרות הסטייל לאתר */
+body {
+  background-color: #f5f5dc99; /* צבע הרקע של כל האתר */
+  font-family: Arial, sans-serif; /* פונטים כללים */
+  margin: 0; /* מבטל את הרווחים של הדף */
+  padding: 0; /* מבטל את הריפוד של הדף */
+  color: #333; /* צבע טקסט כללי */
+}
+
+/* App.css או הקובץ שלך */
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* אם יש צורך להוסיף מרווח בין הניווט לפוטר */
+.nav-footer-spacing {
+  flex: 1;
+  padding: 2rem 0; /* מוסיף ריווח נוסף מלמעלה ומלמטה */
+}
+
+/* Form Controls */
+.custom-form-control:focus,
+.form-select:focus,
+.form-control:focus {
+  border-bottom: 3px solid var(--site-primary-light) !important;
+}
+
+/* Custom Variables */
+:root {
+  --site-primary: #192d45;
+  --site-primary-light: #26466d;
+  --site-primary-dark: #113158;
+}

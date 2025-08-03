@@ -1,0 +1,323 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: white;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.page {
+    width: 21cm;
+    margin: 0 auto 2cm auto;
+    page-break-after: always;
+    padding: 0.5cm 0.1cm 0 0.1cm;
+}
+
+/* Sticky upload button styles */
+.upload-container {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(26, 59, 109, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    border-bottom: 3px solid #e4b147;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.upload-container.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.upload-content {
+    width: 794px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.upload-label {
+    color: #e4b147;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.upload-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.upload-input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.upload-button {
+    background: linear-gradient(135deg, #e4b147 0%, #f0c14b 100%);
+    color: #1a3b6d;
+    border: 2px solid #e4b147;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(228, 177, 71, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 140px;
+    justify-content: center;
+}
+
+.upload-button:hover {
+    background: linear-gradient(135deg, #f0c14b 0%, #e4b147 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(228, 177, 71, 0.4);
+}
+
+.upload-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(228, 177, 71, 0.3);
+}
+
+.upload-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.selected-indices {
+    color: #e4b147;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgba(228, 177, 71, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(228, 177, 71, 0.3);
+}
+
+.custom-header {
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    width: 90%;
+    margin: 8px 0 15px auto;
+    height: 25px;
+}
+
+.header-label-bg {
+    background: #1a3b6d;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 4px 24px 4px 16px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.header-label {
+    color: #e4b147;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.header-line {
+    flex: 1;
+    height: 6px;
+    background: #1a3b6d;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.container-posting {
+    display: grid;
+    width: 97%;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.card-posting {
+    position: relative;
+    border: 4px solid #1a3b6d;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.image-card {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.image-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e4b147;
+    color: #1a3b6d;
+    font-weight: bold;
+    padding: 2px 18px 2px 12px;
+    border-bottom-right-radius: 22px;
+    border-top-left-radius: 18px;
+    font-size: 15px;
+}
+
+.mediation-color {
+    background: #e4b147;
+    color: #1a3b6d;
+}
+
+.without-mediation-color {
+    background: #1a3b6d;
+    color: #e4b147;
+}
+
+.location {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a3b6d;
+    text-align: center;
+    margin: 5px 0;
+    margin-top: 25px;
+}
+
+.info-layout {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: 60px;
+}
+
+.info-section.right {
+    width: 45%;
+    font-size: 12px;
+    color: #1a3b6d;
+    font-weight: bold;
+}
+
+.info-section.left {
+    flex: 1;
+    font-size: 15px;
+    color: #1a3b6d;
+    padding-right: 4px;
+}
+.characteristics{
+    background: lightgray;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-size: 13px;
+}
+.divider {
+    width: 1px;
+    background-color: #1a3b6d;
+    height: 60px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a3b6d;
+}
+.characteristics-container{
+    min-height: 45px;
+    line-height: 18px;
+}
+.footer {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom-right-radius: 28px;
+    border-top-left-radius: 8px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.info-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+/* PDF Save Button styles */
+.pdf-save-button {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0 12px 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.pdf-save-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.pdf-save-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media print {
+    body, .card, .tag, .custom-header, .header-label-bg {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    .upload-container {
+        display: none;
+    }
+}

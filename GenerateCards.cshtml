@@ -1,0 +1,131 @@
+@model List<PropertyModel>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מיד ליד - גליון 1</title>
+    <style>
+        @* העתק את כל ה-CSS מהקובץ המקורי לכאן *@
+    </style>
+</head>
+<body>
+    <div id="all-cards" style="display:none;">
+        @foreach (var property in Model)
+        {
+            <div class="card">
+                <div class="tag">תיווך</div>
+                <div class="location">@($"{property.CityName} - {property.StreetName}")</div>
+                <div class="info-layout">
+                    <div class="info-section right">
+                        <div><span class="icon rooms"></span>@property.NumberOfRoomsName</div>
+                        <div><span class="icon floor"></span>קומה @property.Floor</div>
+                        <div><span class="icon size"></span>@property.PropertySizeInMeters מ"ר</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-section left">
+                        <div>
+                            @if (property.IsThereOptions)
+                            {
+                                <text>אופציה</text>
+                            }
+                            @if (property.IsThereParcking)
+                            {
+                                <text>חניה</text>
+                            }
+                        </div>
+                        <div class="price">₪@property.Price?.ToString("N0")</div>
+                    </div>
+                </div>
+                <div class="footer">תיווך @property.FullName @property.Phone</div>
+            </div>
+        }
+    </div>
+    <div id="pages-root"></div>
+    <script>
+        // Dynamic header labels for each page
+        const headerLabels = [
+            "מכירה", // Page 1
+            "להשכרה", // Page 2
+            "מבצע",   // Page 3
+        ];
+        
+        // Set your footer labels for each page here:
+        const footerLabels = [
+            "גליון 1", // Page 1
+            "גליון 2", // Page 2
+            "גליון 3", // Page 3
+        ];
+        
+        const allCards = Array.from(document.querySelectorAll('#all-cards .card'));
+        const pagesRoot = document.getElementById('pages-root');
+        
+        // Create a single container for all content
+        const container = document.createElement('div');
+        container.className = 'container';
+        
+        // Add header to the container
+        const header = document.createElement('div');
+        header.className = 'custom-header';
+        header.innerHTML = `
+            <div class="header-label-bg">
+                <span class="header-label">${headerLabels[0] || "מכירה"}</span>
+            </div>
+            <div class="header-line"></div>
+        `;
+        container.appendChild(header);
+        
+        // Add all cards to the container
+        allCards.forEach((card, i) => {
+            // Add image placeholder in the second position
+            if (i === 1) {
+                const imagePlaceholder = document.createElement('div');
+                imagePlaceholder.className = 'card';
+                imagePlaceholder.style.background = '#f0f0f0';
+                imagePlaceholder.style.display = 'flex';
+                imagePlaceholder.style.alignItems = 'center';
+                imagePlaceholder.style.justifyContent = 'center';
+                imagePlaceholder.style.border = 'none';
+                imagePlaceholder.style.borderRadius = '0';
+                imagePlaceholder.style.padding = '0';
+                imagePlaceholder.style.overflow = 'hidden';
+                imagePlaceholder.innerHTML = '<img src="https://www.mako.co.il/_next/image?url=https%3A%2F%2Fimg.mako.co.il%2F2024%2F01%2F08%2Fguy_pines6_43_080323_03_ido_autoOrient_i.jpg&w=640&q=75" alt="Advertisement" style="width: 100%; height: 100%; object-fit: cover; display: block;">';
+                container.appendChild(imagePlaceholder);
+            }
+
+            // Add wide image placeholder in the fourth position
+            if (i === 3) {
+                const wideImagePlaceholder = document.createElement('div');
+                wideImagePlaceholder.className = 'card';
+                wideImagePlaceholder.style.background = '#f0f0f0';
+                wideImagePlaceholder.style.display = 'flex';
+                wideImagePlaceholder.style.alignItems = 'center';
+                wideImagePlaceholder.style.justifyContent = 'center';
+                wideImagePlaceholder.style.border = 'none';
+                wideImagePlaceholder.style.borderRadius = '0';
+                wideImagePlaceholder.style.padding = '0';
+                wideImagePlaceholder.style.overflow = 'hidden';
+                wideImagePlaceholder.style.gridColumn = 'span 2';
+                wideImagePlaceholder.innerHTML = '<img src="https://www.mako.co.il/_next/image?url=https%3A%2F%2Fimg.mako.co.il%2F2024%2F01%2F08%2Fguy_pines6_43_080323_03_ido_autoOrient_i.jpg&w=640&q=75" alt="Wide Advertisement" style="width: 100%; height: 100%; object-fit: cover; display: block;">';
+                container.appendChild(wideImagePlaceholder);
+            }
+
+            container.appendChild(card);
+        });
+
+        // Add footer
+        const footer = document.createElement('div');
+        footer.className = 'page-footer';
+        footer.innerHTML = `
+            <div class="page-footer-line"></div>
+            <span class="page-footer-label">${footerLabels[0] || "גליון 1"}</span>
+        `;
+        container.appendChild(footer);
+        
+        // Add the container to the pages root
+        pagesRoot.appendChild(container);
+    </script>
+</body>
+</html> 

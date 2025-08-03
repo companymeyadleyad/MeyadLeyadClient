@@ -1,0 +1,21 @@
+.random-quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  background: #f7f6fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(80, 80, 160, 0.08);
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 600px;
+}
+
+.random-quote-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b3576;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}

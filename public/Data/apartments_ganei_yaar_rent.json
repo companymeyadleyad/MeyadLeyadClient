@@ -1,0 +1,149 @@
+{
+  "neighborhood": "גני יער",
+  "apartments": [
+    {
+      "apartment_id": 201,
+      "floor": 3,
+      "rooms": 4,
+      "price": 5000,
+      "size_m2": 110,
+      "balcony": true,
+      "parking": true,
+      "furnished": false,
+      "for_rent": true,
+      "street": "הרחוב הרביעי"
+    },
+    {
+      "apartment_id": 202,
+      "floor": 1,
+      "rooms": 3,
+      "price": 3800,
+      "size_m2": 90,
+      "balcony": false,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב החמישי"
+    },
+    {
+      "apartment_id": 203,
+      "floor": 6,
+      "rooms": 5,
+      "price": 7500,
+      "size_m2": 130,
+      "balcony": true,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השישי"
+    },
+    {
+      "apartment_id": 204,
+      "floor": 2,
+      "rooms": 3,
+      "price": 4200,
+      "size_m2": 95,
+      "balcony": true,
+      "parking": false,
+      "furnished": false,
+      "for_rent": true,
+      "street": "הרחוב הראשון"
+    },
+    {
+      "apartment_id": 205,
+      "floor": 4,
+      "rooms": 4,
+      "price": 5800,
+      "size_m2": 115,
+      "balcony": true,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השמיני"
+    },
+    {
+      "apartment_id": 206,
+      "floor": 3,
+      "rooms": 5,
+      "price": 6500,
+      "size_m2": 140,
+      "balcony": true,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השביעי"
+    },
+    {
+      "apartment_id": 207,
+      "floor": 5,
+      "rooms": 6,
+      "price": 8500,
+      "size_m2": 160,
+      "balcony": true,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השני"
+    },
+    {
+      "apartment_id": 208,
+      "floor": 2,
+      "rooms": 4,
+      "price": 5400,
+      "size_m2": 110,
+      "balcony": false,
+      "parking": true,
+      "furnished": false,
+      "for_rent": true,
+      "street": "הרחוב העשירי"
+    },
+    {
+      "apartment_id": 209,
+      "floor": 6,
+      "rooms": 3,
+      "price": 4000,
+      "size_m2": 85,
+      "balcony": true,
+      "parking": false,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השישי"
+    },
+    {
+      "apartment_id": 210,
+      "floor": 1,
+      "rooms": 2,
+      "price": 3300,
+      "size_m2": 75,
+      "balcony": false,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב השלישי"
+    },
+    {
+      "apartment_id": 211,
+      "floor": 4,
+      "rooms": 4,
+      "price": 5600,
+      "size_m2": 105,
+      "balcony": true,
+      "parking": true,
+      "furnished": false,
+      "for_rent": true,
+      "street": "הרחוב התשיעי"
+    },
+    {
+      "apartment_id": 212,
+      "floor": 2,
+      "rooms": 3,
+      "price": 4500,
+      "size_m2": 95,
+      "balcony": true,
+      "parking": true,
+      "furnished": true,
+      "for_rent": true,
+      "street": "הרחוב הראשון"
+    }
+  ]
+}

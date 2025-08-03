@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>רש לקיש 5</title>
+  <style>
+    body {
+      background: #f3ede5;
+      font-family: Arial, sans-serif;
+      margin: auto;
+      padding: 0;
+      width: 210mm;
+      min-height: 297mm;
+      box-sizing: border-box;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 24px 0;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #fff;
+      border: 6px solid #22313f;
+      border-radius: 40px 0 40px 0;
+      padding: 18px 10px 14px 10px;
+      box-sizing: border-box;
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+      height: 200px;
+      width: 100%;
+      min-width: 0;
+    }
+    .card-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #22313f;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .card-content-row {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      height: auto;
+      min-height: 90px;
+    }
+    .card-info {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.98em;
+      color: #22313f;
+      padding-left: 8px;
+      z-index: 1;
+    }
+    .card-info-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1em;
+      color: #22313f;
+    }
+    .card-divider {
+      width: 2px;
+      background: #e2b873;
+      border-radius: 1px;
+      align-self: stretch;
+      z-index: 2;
+    }
+    .card-desc {
+      flex: 2;
+      text-align: right;
+      color: #22313f;
+      font-size: 0.98em;
+      line-height: 1.4;
+      z-index: 1;
+      padding-right: 8px;
+    }
+    @media print {
+      body {
+        width: 210mm;
+        min-height: 297mm;
+      }
+      .cards-container {
+        max-width: 210mm;
+      }
+      .card {
+        page-break-inside: avoid;
+      }
+    }
+    @media (max-width: 1100px) {
+      .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 700px) {
+      .cards-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    <!-- 8 cards -->
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">רש לקיש 5</div>
+      <div class="card-content-row">
+        <div class="card-info">
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128719;</span>
+            <span>98 מ"ר</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128716;</span>
+            <span>3 חדרים</span>
+          </div>
+          <div class="card-info-row">
+            <span style="font-size: 1.1em;">&#128694;</span>
+            <span>קומה 4</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-desc">
+          דירה ענקית עם מטבח<br>
+          משופץ<br>
+          בקרבה לתחנות אוטובוס<br>
+          מול נוף מרווח
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,42 @@
+{
+    "neighborhood": "רמות",
+    "apartments": [
+      {
+        "apartment_id": 101,
+        "floor": 2,
+        "rooms": 4,
+        "price": 1500,
+        "size_m2": 100,
+        "balcony": true,
+        "parking": true,
+        "furnished": false,
+        "for_shabbat": true,
+        "street": "הרחוב הראשון"
+      },
+      {
+        "apartment_id": 102,
+        "floor": 5,
+        "rooms": 3,
+        "price": 1200,
+        "size_m2": 85,
+        "balcony": false,
+        "parking": true,
+        "furnished": true,
+        "for_shabbat": true,
+        "street": "הרחוב השני"
+      },
+      {
+        "apartment_id": 103,
+        "floor": 7,
+        "rooms": 5,
+        "price": 2000,
+        "size_m2": 120,
+        "balcony": true,
+        "parking": true,
+        "furnished": true,
+        "for_shabbat": true,
+        "street": "הרחוב השלישי"
+      }
+    ]
+  }
+  

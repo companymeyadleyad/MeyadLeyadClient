@@ -1,0 +1,42 @@
+{
+    "neighborhood": "גני יער",
+    "apartments": [
+      {
+        "apartment_id": 201,
+        "floor": 3,
+        "rooms": 4,
+        "price": 1600,
+        "size_m2": 110,
+        "balcony": true,
+        "parking": true,
+        "furnished": false,
+        "for_shabbat": true,
+        "street": "הרחוב הרביעי"
+      },
+      {
+        "apartment_id": 202,
+        "floor": 1,
+        "rooms": 3,
+        "price": 1300,
+        "size_m2": 90,
+        "balcony": false,
+        "parking": true,
+        "furnished": true,
+        "for_shabbat": true,
+        "street": "הרחוב החמישי"
+      },
+      {
+        "apartment_id": 203,
+        "floor": 6,
+        "rooms": 5,
+        "price": 2500,
+        "size_m2": 130,
+        "balcony": true,
+        "parking": true,
+        "furnished": true,
+        "for_shabbat": true,
+        "street": "הרחוב השישי"
+      }
+    ]
+  }
+  

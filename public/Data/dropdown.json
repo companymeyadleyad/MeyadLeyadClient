@@ -1,0 +1,24 @@
+[
+    {
+      "title": "דירות למכירה",
+      "id": "navbar-dropdown-sale",
+      "items": [
+        { "label": "דירות למכירה בתל אביב", "link": "/sales/tel-aviv" }
+      ]
+    },
+    {
+      "title": "דירות להשכרה",
+      "id": "navbar-dropdown-rent",
+      "items": [
+        { "label": "דירות להשכרה בבית שמש", "link": "/rent/tel-aviv" }
+      ]
+    },
+    {
+      "title": "דירות לשבת",
+      "id": "navbar-dropdown-shabbat",
+      "items": [
+        { "label": "דירות לשבת בבית שמש", "link": "/shabbat/tel-aviv" }
+      ]
+    }
+  ]
+  

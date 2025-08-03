@@ -1,0 +1,192 @@
+{
+  "apartments": [
+    {
+      "id": 1,
+      "title": "דירת 2 חדרים להשכרה במרכז תל אביב",
+      "price": "₪6,500 לחודש",
+      "location": "תל אביב, ישראל",
+      "image": "https://example.com/rent-image1.jpg",
+      "shortDescription": "דירה קומפקטית ומודרנית במיקום מושלם, קרובה לרכבת הקלה."
+    },
+    {
+      "id": 2,
+      "title": "דירת 3 חדרים משופצת להשכרה",
+      "price": "₪7,800 לחודש",
+      "location": "ירושלים, ישראל",
+      "image": "https://example.com/rent-image2.jpg",
+      "shortDescription": "דירה מרווחת עם מטבח חדש ונוף לעיר העתיקה."
+    },
+    {
+      "id": 3,
+      "title": "דירת 4 חדרים להשכרה בפרדס חנה",
+      "price": "₪5,800 לחודש",
+      "location": "פרדס חנה, ישראל",
+      "image": "https://example.com/rent-image3.jpg",
+      "shortDescription": "דירה עם מרפסת וגינה פרטית, קרובה לשדות וכבישים ראשיים."
+    },
+    {
+      "id": 4,
+      "title": "דירת 5 חדרים להשכרה ברמת גן",
+      "price": "₪9,200 לחודש",
+      "location": "רמת גן, ישראל",
+      "image": "https://example.com/rent-image4.jpg",
+      "shortDescription": "דירה מפוארת עם מטבח חדש וגדול, חדרי שינה מרווחים ופארק ליד הבית."
+    },
+    {
+      "id": 5,
+      "title": "דירת 2 חדרים להשכרה בקרית אונו",
+      "price": "₪6,200 לחודש",
+      "location": "קרית אונו, ישראל",
+      "image": "https://example.com/rent-image5.jpg",
+      "shortDescription": "דירה עם חדר עבודה קטן ומיקום מעולה, קרובה למרכז העיר."
+    },
+    {
+      "id": 6,
+      "title": "דירת 3 חדרים להשכרה בחולון",
+      "price": "₪7,000 לחודש",
+      "location": "חולון, ישראל",
+      "image": "https://example.com/rent-image6.jpg",
+      "shortDescription": "דירה מוארת ונעימה, קרובה לחוף הים והמרכז המסחרי."
+    }
+  ],
+  "apartmentDetails": [
+    {
+      "id": 1,
+      "title": "דירת 2 חדרים להשכרה במרכז תל אביב",
+      "price": "₪6,500 לחודש",
+      "location": "תל אביב, ישראל",
+      "size": "60 מ\"ר",
+      "rooms": 2,
+      "floor": 3,
+      "totalFloors": 6,
+      "balcony": false,
+      "parking": false,
+      "description": "דירה קומפקטית ומעוצבת בלב תל אביב, קרובה לתחבורה ציבורית ולבתי קפה.",
+      "images": [
+        "https://example.com/rent-image1.jpg",
+        "https://example.com/rent-image3.jpg",
+        "https://example.com/rent-image4.jpg"
+      ],
+      "contact": {
+        "name": "רונית לוי",
+        "phone": "050-1234567",
+        "email": "ronit@example.com"
+      }
+    },
+    {
+      "id": 2,
+      "title": "דירת 3 חדרים משופצת להשכרה",
+      "price": "₪7,800 לחודש",
+      "location": "ירושלים, ישראל",
+      "size": "85 מ\"ר",
+      "rooms": 3,
+      "floor": 2,
+      "totalFloors": 5,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה משופצת ברמה גבוהה עם מטבח מודרני, חדרים גדולים וסלון מואר.",
+      "images": [
+        "https://example.com/rent-image2.jpg",
+        "https://example.com/rent-image5.jpg",
+        "https://example.com/rent-image6.jpg"
+      ],
+      "contact": {
+        "name": "יוסי כהן",
+        "phone": "052-9876543",
+        "email": "yossi@example.com"
+      }
+    },
+    {
+      "id": 3,
+      "title": "דירת 4 חדרים להשכרה בפרדס חנה",
+      "price": "₪5,800 לחודש",
+      "location": "פרדס חנה, ישראל",
+      "size": "100 מ\"ר",
+      "rooms": 4,
+      "floor": 1,
+      "totalFloors": 2,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה עם מרפסת וגינה פרטית, קרובה לשדות וכבישים ראשיים.",
+      "images": [
+        "https://example.com/rent-image3.jpg",
+        "https://example.com/rent-image7.jpg",
+        "https://example.com/rent-image8.jpg"
+      ],
+      "contact": {
+        "name": "דני גרינברג",
+        "phone": "054-1234567",
+        "email": "dani@example.com"
+      }
+    },
+    {
+      "id": 4,
+      "title": "דירת 5 חדרים להשכרה ברמת גן",
+      "price": "₪9,200 לחודש",
+      "location": "רמת גן, ישראל",
+      "size": "120 מ\"ר",
+      "rooms": 5,
+      "floor": 4,
+      "totalFloors": 8,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה מפוארת עם מטבח חדש וגדול, חדרי שינה מרווחים ופארק ליד הבית.",
+      "images": [
+        "https://example.com/rent-image4.jpg",
+        "https://example.com/rent-image9.jpg",
+        "https://example.com/rent-image10.jpg"
+      ],
+      "contact": {
+        "name": "הדס מזרחי",
+        "phone": "053-1234567",
+        "email": "hadas@example.com"
+      }
+    },
+    {
+      "id": 5,
+      "title": "דירת 2 חדרים להשכרה בקרית אונו",
+      "price": "₪6,200 לחודש",
+      "location": "קרית אונו, ישראל",
+      "size": "50 מ\"ר",
+      "rooms": 2,
+      "floor": 2,
+      "totalFloors": 4,
+      "balcony": false,
+      "parking": true,
+      "description": "דירה עם חדר עבודה קטן ומיקום מעולה, קרובה למרכז העיר.",
+      "images": [
+        "https://example.com/rent-image5.jpg",
+        "https://example.com/rent-image11.jpg",
+        "https://example.com/rent-image12.jpg"
+      ],
+      "contact": {
+        "name": "אורן קופרמן",
+        "phone": "050-7894561",
+        "email": "oren@example.com"
+      }
+    },
+    {
+      "id": 6,
+      "title": "דירת 3 חדרים להשכרה בחולון",
+      "price": "₪7,000 לחודש",
+      "location": "חולון, ישראל",
+      "size": "75 מ\"ר",
+      "rooms": 3,
+      "floor": 2,
+      "totalFloors": 6,
+      "balcony": true,
+      "parking": true,
+      "description": "דירה מוארת ונעימה, קרובה לחוף הים והמרכז המסחרי.",
+      "images": [
+        "https://example.com/rent-image6.jpg",
+        "https://example.com/rent-image13.jpg",
+        "https://example.com/rent-image14.jpg"
+      ],
+      "contact": {
+        "name": "מאיה עוזרי",
+        "phone": "054-1231231",
+        "email": "maya@example.com"
+      }
+    }
+  ]
+}

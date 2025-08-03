@@ -1,0 +1,35 @@
+/* StepsDemo.css */
+.steps-form-container {
+  width: 100%;
+}
+
+/* Card shadow */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Make form fields narrower on desktop */
+@media (min-width: 768px) {
+  .steps-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Target form fields to make them narrower */
+  .steps-form-container form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Target individual form fields */
+  .steps-form-container .form-group,
+  .steps-form-container .form-control,
+  .steps-form-container .form-check {
+    max-width: 100%;
+  }
+}

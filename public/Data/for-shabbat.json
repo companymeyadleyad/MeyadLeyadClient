@@ -1,0 +1,69 @@
+{
+    "apartments": [
+      {
+        "id": 1,
+        "title": "דירת נופש לשבת במרכז ירושלים",
+        "price": "₪1,200 לשבת",
+        "location": "ירושלים, ישראל",
+        "image": "https://example.com/shabbat-image1.jpg",
+        "shortDescription": "דירה מאובזרת ונוחה לשבת עם פלטה, מיחם ושעוני שבת."
+      },
+      {
+        "id": 2,
+        "title": "דירת אירוח מפוארת לשבת משפחתית",
+        "price": "₪1,800 לשבת",
+        "location": "בני ברק, ישראל",
+        "image": "https://example.com/shabbat-image2.jpg",
+        "shortDescription": "דירה גדולה ומרווחת עם מקום למשפחה גדולה וקרובה לבתי כנסת."
+      }
+    ],
+    "apartmentDetails": [
+      {
+        "id": 1,
+        "title": "דירת נופש לשבת במרכז ירושלים",
+        "price": "₪1,200 לשבת",
+        "location": "ירושלים, ישראל",
+        "size": "70 מ\"ר",
+        "rooms": 3,
+        "floor": 2,
+        "totalFloors": 5,
+        "balcony": true,
+        "parking": false,
+        "description": "דירה מאובזרת במיקום מרכזי, מתאימה לאירוח בשבת, כוללת מיטות נוחות, פלטה, מיחם ושעוני שבת.",
+        "images": [
+          "https://example.com/shabbat-image1.jpg",
+          "https://example.com/shabbat-image3.jpg",
+          "https://example.com/shabbat-image4.jpg"
+        ],
+        "contact": {
+          "name": "חיים לוי",
+          "phone": "052-7654321",
+          "email": "chaim@example.com"
+        }
+      },
+      {
+        "id": 2,
+        "title": "דירת אירוח מפוארת לשבת משפחתית",
+        "price": "₪1,800 לשבת",
+        "location": "בני ברק, ישראל",
+        "size": "100 מ\"ר",
+        "rooms": 4,
+        "floor": 1,
+        "totalFloors": 3,
+        "balcony": false,
+        "parking": true,
+        "description": "דירה מרווחת ונעימה, עם שולחן גדול לארוחת שבת, פלטה חשמלית, מיחם, וכמה חדרי שינה לנוחות מירבית.",
+        "images": [
+          "https://example.com/shabbat-image2.jpg",
+          "https://example.com/shabbat-image5.jpg",
+          "https://example.com/shabbat-image6.jpg"
+        ],
+        "contact": {
+          "name": "משה כהן",
+          "phone": "054-3210987",
+          "email": "moshe@example.com"
+        }
+      }
+    ]
+  }
+  

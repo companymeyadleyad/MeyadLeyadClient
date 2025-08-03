@@ -1,0 +1,15 @@
+/* תיקון עיצוב Navbar למובייל */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .navbar .d-flex.align-items-center {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
